@@ -45,3 +45,9 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# folder generated
+/macos
+/android
+/linux
+/Web/windows

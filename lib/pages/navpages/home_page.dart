@@ -67,9 +67,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             height: 300,
             width: double.maxFinite,
             child: TabBarView(controller: tabController, children: [
-              Text("Hi"),
-              Text("Two"),
-              Text("Three"),
+              Text("Let's dicovers best places"),
+              Text("Inspiration View"),
+              Text("Emotion View"),
             ]),
           )
         ],
