@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:travel_app/pages/navpages/main_page.dart';
 import 'package:travel_app/utils/app_colors.dart';
 import 'package:travel_app/widgets/app_large_text.dart';
 import 'package:travel_app/widgets/app_text.dart';
@@ -58,8 +59,17 @@ class _WelcomeState extends State<Welcome> {
                         SizedBox(
                           height: 40,
                         ),
-                        ResponsiveButton(
-                          width: 120,
+                        new GestureDetector(
+                          onTap: (){
+                            if(index==2){
+                              Navigator.push(context,MaterialPageRoute(builder: (context)=>MainPage()));
+                            }else{
+                              print("Not the last");
+                            }
+                          },
+                          child: ResponsiveButton(
+                            width: 120,
+                          ),
                         )
                       ],
                     ),
